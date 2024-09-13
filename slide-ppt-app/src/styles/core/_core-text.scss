@@ -1,0 +1,126 @@
+.ppt-text {
+
+  // align
+  &-align-left {
+    text-align: left;
+  }
+
+  &-align-center {
+    text-align: center;
+  }
+
+  &-align-right {
+    text-align: right;
+  }
+
+  // font-weight
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-light {
+    font-weight: 400;
+  }
+
+  // font-color
+  &-primary-color {
+    color: $primary-color;
+  }
+
+  &-secondary-color {
+    color: $secondary-color;
+  }
+
+  &-white-shade-1 {
+    color: $white-shade-1
+  }
+
+
+  &-gradient-color-1 {
+    background: $gradient-shade-1;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &-gradient-color-2 {
+    background: $gradient-shade-2;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  &-gradient-color-4 {
+    background: $gradient-shade-4;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+  }
+  
+  &-gradient-color-5 {
+    background: $gradient-shade-5;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+
+  &-grey-color {
+    color: $grey-shade;
+  }
+
+  &-grey-shade-2 {
+    color: $grey-shade-2;
+  }
+
+  &-grey-shade-5 {
+    color: $grey-shade-5;
+  }
+
+  &-grey-shade-7 {
+    color: $grey-shade-7;
+  }
+
+  &-grey-shade-8 {
+    color: $grey-shade-8;
+  }
+
+  &-grey-shade-9 {
+    color: $grey-shade-9;
+  }
+
+  &-blue-shade-3 {
+    color: $blue-shade-3;
+  }
+
+  &-gradientU {
+    color: $gradient-shade-1 !important;
+  }
+  &-green-shade-1 {
+    color: $green-shade-1;
+  }
+
+  &-danger {
+    color: $danger-color;
+  }
+
+
+  // misc
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-word-break {
+    word-break: break-all;
+  }
+
+  &-inline {
+    white-space: nowrap;
+  }
+
+  &-italic {
+    font-style: italic;
+  }
+}

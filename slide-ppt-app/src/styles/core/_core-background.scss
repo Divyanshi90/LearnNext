@@ -1,0 +1,86 @@
+.ppt-background {
+  &-primary-color {
+    background-color: $primary-color;
+  }
+
+  &-transparent {
+    background-color: transparent;
+  }
+
+  &-secondary-color {
+    background-color: $secondary-color;
+  }
+
+  &-default-color {
+    background-color: $black-shade-3;
+  }
+
+  
+  &-black-shade {
+    background-color: $black-shade;
+  }
+  &-black-shade-1 {
+    background-color: $black-shade-1;
+  }
+  &-black-shade-2 {
+    background-color: $black-shade-2;
+  }
+  &-black-shade-3 {
+    background-color: $black-shade-3;
+  }
+  &-black-shade-4 {
+    background-color: $black-shade-4;
+  }
+  &-black-shade-5 {
+    background-color: $black-shade-5;
+  }
+  &-black-shade-6 {
+    background-color: $black-shade-6;
+  }
+  &-black-shade-7 {
+    background-color: $black-shade-7;
+  }
+  &-black-shade-9 {
+    background-color: $black-shade-9;
+  }
+
+
+
+  &-blue-shade-4 {
+    background-color: $blue-shade-4;
+  }
+  &-blue-shade-6 {
+    background-color: $blue-shade-6;
+  }
+  &-blue-shade-10 {
+    background-color: $blue-shade-10;
+  }
+
+
+
+  &-grey-shade-3 {
+    background-color: $grey-shade-3;
+  }
+  &-grey-shade-4 {
+    background-color: $grey-shade-4;
+  }
+  &-grey-shade-6 {
+    background-color: $grey-shade-6;
+  }
+
+
+  &-gradient-color {
+    background-color: $gradient-shade;
+  }
+
+  &-gradient {
+    background: $gradient-shade-2;
+  }
+
+  &-success-color {
+    background-color: $success-color;
+  }
+  &-fail-color {
+    background-color: $fail-color;
+  }
+}

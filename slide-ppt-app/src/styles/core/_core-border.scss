@@ -1,0 +1,103 @@
+.ppt-border {
+  &-none {
+    border: none;
+  }
+
+  &-dashed{
+    border-style: dashed;
+  }
+
+
+  &-1 {
+    border: 1px solid;
+  }
+
+  &-2 {
+    border: 2px solid;
+  }
+
+  &-2d {
+    border: 2px dashed;
+  }
+  
+  &-top {
+    border-top: 1px solid;
+  }
+  &-top-2 {
+    border-top: 2px solid;
+  }
+  &-top-3 {
+    border-top: 3px solid;
+  }
+  &-top-4 {
+    border-top: 4px solid;
+  }
+  &-bottom {
+    border-bottom: 1px solid;
+  }
+  &-bottom-3 {
+    border-bottom: 3px solid;
+  }
+  &-left {
+    border-left: 1px solid;
+  }
+  &-right {
+    border-right: 1px solid;
+  }
+
+  //Color
+  &-primary-color {
+    border-color: $primary-color;
+  }
+
+  &-secondary-color {
+    border-color: $secondary-color;
+  }
+
+  &-gradient-color {
+    // border: 1px ;
+    // border-style: dashed;
+    border-image: linear-gradient(54.56deg, #FF1CF7 -31.25%, #00F0FF 148.72%);
+    // border-image-slice: 1;
+  }
+
+
+  &-grey-color {
+    border-color: $grey-shade-1;
+  }
+  &-grey-color-6 {
+    border-color: $grey-shade-6;
+  }
+  &-grey-color-3 {
+    border-color: $grey-shade-3;
+  }
+  &-grey-color-8 {
+    border-color: $grey-shade-8;
+  }
+  &-grey-color-10 {
+    border-color: $grey-shade-10;
+  }
+  &-grey-color-11 {
+    border-color: $grey-shade-11;
+  }
+
+
+
+
+
+  &-black-shade-1 {
+    border-color: $black-shade-1;
+  }
+
+  &-black-shade-2 {
+    border-color: $black-shade-2;
+  }
+
+  &-blue-shade-5 {
+    border-color: $blue-shade-5;
+  }
+
+  &-blue-shade-7 {
+    border-color: $blue-shade-7;
+  }
+}

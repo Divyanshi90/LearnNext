@@ -1,0 +1,23 @@
+.ppt-cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+
+  &-move {
+    cursor: move;
+  }
+
+  &-default {
+    cursor: default;
+  }
+  &-not-allowed {
+    cursor: not-allowed;
+  }
+
+}
+
+.ppt-opacity {
+  &-half {
+    opacity: 0.5;
+  }
+}

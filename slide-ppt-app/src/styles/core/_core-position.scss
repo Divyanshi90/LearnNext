@@ -1,0 +1,42 @@
+.ppt-position {
+    &-relative {
+        position: relative;
+    }
+    &-absolute {
+        position: absolute;
+    }
+    &-static {
+        position: static;
+    }
+    &-fixed {
+        position: fixed;
+    }
+}
+
+
+.ppt-overflow {
+    &-hidden {
+        overflow: hidden;
+    }
+    &-auto {
+        overflow: auto;
+    }
+    &-auto-y {
+        overflow-y: auto;
+    }
+    &-auto-x {
+        overflow-x: auto;
+    }
+}
+
+.ppt-box-shadow {
+    &-none {
+        box-shadow: none;
+    }
+}
+
+.ppt-display {
+    &-none {
+        display: none;
+    }
+}

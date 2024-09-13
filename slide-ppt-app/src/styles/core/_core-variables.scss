@@ -1,0 +1,117 @@
+/*
+* Font Size
+* Our Root font size is 16px;
+*/
+
+// Font Family
+$primary-font: 'Satoshi-Regular';
+
+// Color Variables
+$primary-color: #FFFFFF;
+$secondary-color: #28A7FB;
+
+$white-shade-1: #F5F5F5;
+
+$blue-shade-1:  #2FACFF;
+$blue-shade-2:  #0794F1;
+$blue-shade-3: #8C91BE;
+$blue-shade-4: #1273EB;
+$blue-shade-5: #AABDD9;
+$blue-shade-6: #010417;
+$blue-shade-7: #182542;
+$blue-shade-8: #3C7FF3;
+$blue-shade-9: #001BFF;
+$blue-shade-10: #232855;
+
+
+
+
+
+$grey-shade: #77798F;
+$grey-shade-1:  #2A2B3A ;
+$grey-shade-2:  #C3C4D5 ;
+$grey-shade-3: #23232E;
+$grey-shade-4: #37384A;
+$grey-shade-5: #848484;
+$grey-shade-6: #2D3142;
+$grey-shade-7: #595959;
+$grey-shade-8: #838383;
+$grey-shade-9: #828282;
+$grey-shade-10:#373A51;
+$grey-shade-11: #333030;
+$grey-shade-12:#3A3A3A;
+
+
+$green-shade-1: #9EFFC5;
+
+$black-shade :#141414 ;
+$black-shade-1 :#272527;
+$black-shade-2 :#373737;
+$black-shade-3: #010314;
+$black-shade-4:#18181B;
+$black-shade-5: #27272A;
+$black-shade-6:#373738;
+$black-shade-7:#353535;
+$black-shade-8:#3A3A3A;
+$black-shade-9: #2A2F3B;
+
+$success-color: #56A48F;
+$fail-color: #F64B3C;
+
+$danger-color: #f50d0d;
+
+$popup-gradient:linear-gradient(90deg, #28A7FB 0%, #6D3AFF 100%);
+$popup-gradient2: linear-gradient(54.56deg, #FF1CF7 -31.25%, #00F0FF 148.72%);
+
+$gradient-shade: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0) 21.67%, #0099FF 69.34%, #1984CC 100%);
+$gradient-shade-1: linear-gradient(90.82deg, #FF1CF7 24.27%, #00F0FF 71.14%);
+$gradient-shade-2: linear-gradient(90deg, #DF1FFE 2.1%, #1298F9 100.11%);
+$gradient-shade-3: linear-gradient(90.96deg, #FF1CF7 -2.35%, #00F0FF 101.27%);
+$gradient-shade-4: linear-gradient(90.82deg, #FF1CF7 24.27%, #00F0FF 71.14%);
+$gradient-shade-5: linear-gradient(91.31deg, #FF1CF7 -13.76%, #00F0FF 104.69%);
+
+
+//padding variables
+$padding-0: 0rem;
+$padding-1: 0.25rem;
+$padding-2: 0.5rem;
+$padding-3: 0.75rem;
+$padding-4: 1rem;
+$padding-5: 1.25rem;
+$padding-6: 1.5rem;
+$padding-7: 1.75rem;
+$padding-8: 2rem;
+$padding-9: 2.25rem;
+$padding-10: 2.5rem;
+$padding-11: 2.75rem;
+$padding-12: 3rem;
+
+// Margin Variables
+$margin-0: 0rem;
+$margin-1: 0.25rem;
+$margin-2: 0.5rem;
+$margin-3: 0.75rem;
+$margin-4: 1rem;
+$margin-5: 1.25rem;
+$margin-6: 1.5rem;
+$margin-7: 1.75rem;
+$margin-8: 2rem;
+$margin-9: 2.25rem;
+$margin-10: 2.5rem;
+$margin-11: 2.75rem;
+$margin-12: 3rem;
+$margin-13: 3.25rem;
+$margin-14: 3.5rem;
+$margin-15: 3.75rem;
+$margin-16: 4rem;
+
+
+// Screen Resolution Variables
+$mobile-min: 320px;
+$mobile-max: 767px;
+
+$tab-min: 768px;
+$tab-max: 1100px;
+
+$dekstop: 1101px;
+$large-monitor: 1920px;
