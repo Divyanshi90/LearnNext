@@ -1,0 +1,306 @@
+@import "../../styles/core/core-variables";
+
+.ppt-custom-input {
+  textarea {
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.68rem;
+    border-radius: 10px;
+    border: none;
+    resize: vertical;
+  }
+  input {
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.68rem;
+    border-radius: 10px;
+    border: none;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active { 
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: $grey-shade-2;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+  input,textarea:focus {
+    outline: none;
+    box-shadow: none !important;
+  }
+
+  &.no-resize {
+    textarea {
+      resize: none;
+    }
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: $grey-shade-2;
+    opacity: 42%;
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.68rem;
+  }
+  .ppt-dropdown-message {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+ 
+}
+
+.ppt-textarea-container {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, #F09FFD 0%, #1494F1 100%);
+}
+.ppt-dropdown-container {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, #F09FFD 0%, #1494F1 100%);
+  width: 26rem;
+}
+.ppt-fileUploader-container {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, #F09FFD 0%, #1494F1 100%);
+  width: 26rem;
+}
+
+.ppt-upload-input {
+ border-radius: 10px;
+ font-size: 1.25rem;
+ font-weight: 400;
+ line-height: 1.5rem;
+}
+
+
+.custom-checkBox-container {
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 1.87rem;
+  margin-top: 1rem;
+}
+
+.checkbox-input-container {
+  width: 18px;
+  height: 18px;
+  background: $gradient-shade-3;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 3px;
+
+}
+
+.checkbox-checked {
+  background: $gradient-shade-3;
+  border: none;
+}
+
+.ppt {
+  &-input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 15px;
+    padding: 2px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    position: absolute !important;
+    top: 1px !important;
+    margin: 0 !important;
+    left: 1px !important;
+
+  }
+
+  &-input[type="checkbox"]:checked {
+    background: $gradient-shade-3;
+  }
+
+  &-input[type="checkbox"]:checked::after {
+    content: '\2714' !important;
+    font-size: 15px;
+    background: black;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    position: relative;
+    bottom: 2px;
+
+  }
+}
+
+.ppt-dropdown {
+  &.ui.selection.dropdown {
+    background: $black-shade-9;
+    border-radius: 10px;
+    border: none !important;
+    display: flex;
+    justify-content: space-between;
+    padding : 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem !important;
+    color: $white-shade-1 !important;
+
+  }
+  &.ui.active.selection.dropdown {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+&.ui.selection.visible.dropdown>.text:not(.default) {
+  color: $white-shade-1 !important;
+}
+
+&.ui.selection.active.dropdown .menu {
+  border-color : transparent !important;
+  box-shadow: none !important;
+}
+&.ui.dropdown .menu {
+ 
+  color: $white-shade-1 !important;
+  z-index: 0 !important;
+  background: $gradient-shade-3;
+  // padding: 2px;
+  border: 2px solid
+}
+
+&.ui.floating.dropdown>.menu {
+ border-radius: 10px !important;
+}
+&.ui.selection.dropdown .menu>.item {
+  background: $black-shade-9 !important;
+  border-bottom: 1px ;
+  border-image: $gradient-shade-3;
+  border-image-slice: 1;
+}
+&.ui.selection.dropdown .menu > .item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 2px;
+}
+&.ui.selection.dropdown .menu > .item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: none !important; 
+}
+
+&.ui.dropdown .menu>.item {
+  color: $white-shade-1 !important;
+}
+&.ui.selection.dropdown .menu  {
+  max-height: 14rem !important;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+}
+
+
+
+
+
+@media screen and (max-width: 1018px) and (min-width: 994px){
+  .custom-checkBox-container {
+    font-size: 1.13rem;
+   
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .custom-checkBox-container {
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    margin-top: 0.5rem;
+
+    &-title {
+      margin-right: 1rem;
+    }
+
+  }
+
+  .ppt-custom-input {
+    input , textarea {
+      font-size: 0.84rem;
+      line-height: 1.2rem;
+     
+    }
+    input::placeholder ,textarea::placeholder {
+      font-size: 0.84rem;
+      line-height: 1.2rem;
+    }
+  }
+  .ppt-dropdown {
+    &.ui.selection.dropdown {
+      font-size: 1rem;
+      line-height: 1rem !important;
+    }
+  }
+  .ppt-upload-input {
+    font-size: 1rem;
+    line-height: 1rem;
+   }
+   
+  .checkbox-input-container {
+    width: 15px;
+    height: 15px;
+  }
+
+  .ppt {
+    &-input[type="checkbox"] {
+      width: 13px;
+      height: 13px;
+      top: 1px !important;
+      margin: 0 !important;
+      left: 1px !important;
+    }
+
+    &-input[type="checkbox"]:checked::after {
+      font-size: 14px;
+      bottom: 4px;
+      text-align: center;
+    }
+  }
+  .ppt-dropdown-container {
+    width: 100%;
+  }
+  .ppt-fileUploader-container {
+   width: 100%;
+  }
+}
+
+.extra-line-container {
+  // background: red;
+  position: absolute;
+  bottom: 0px; 
+  right: 0px; 
+  width: 43px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.extra-line {
+  position: absolute;
+  bottom: -15%;
+  width: 0.5px;
+  height: 26px;
+  background: white;
+  opacity: 83%;
+  transform: rotate(45deg);
+  left: 78%;
+}
+.extra-line1 {
+  position: absolute;
+  bottom: -7%;
+  width: 0.5px;
+  height: 18px;
+  background: white;
+  opacity: 83%;
+  transform: rotate(45deg);
+  left: 86%;
+}
