@@ -11,13 +11,17 @@ body {
     font-size: 16px;
   }
 }
-.ppt{
-  &-h1,&-h2,&-h3,&-h4,&-h5,&-h6 {
+.ppt {
+  &-h1,
+  &-h2,
+  &-h3,
+  &-h4,
+  &-h5,
+  &-h6 {
     margin: 0 !important;
     font-family: $primary-font !important;
   }
-}   
-
+}
 
 body {
   // height: 100%;
@@ -25,8 +29,8 @@ body {
   position: relative;
   font-family: $primary-font;
   font-weight: 500;
-  color: #000000;
-  background-color:  #010314;
+  // color: #000000;
+  background-color: #010314;
   border-top: 2px solid $secondary-color;
 }
 
@@ -38,8 +42,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 body::-webkit-scrollbar-track {
@@ -56,7 +59,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px #010314;
-  background-color: #2FACFF;
+  background-color: #2facff;
 }
 
 .page-padding {

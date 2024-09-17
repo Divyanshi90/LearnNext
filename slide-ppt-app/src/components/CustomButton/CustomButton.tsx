@@ -3,6 +3,7 @@ import { Button } from "semantic-ui-react";
 import classnames from "classnames";
 import { IconSizeProp } from "semantic-ui-react/dist/commonjs/elements/Icon/Icon";
 // import SvgIcon, { SVGType } from "components/SvgIcon";
+import { useRouter } from "next/navigation";
 import "./CustomButton.scss";
 
 export enum ICON_POSITION {
@@ -29,10 +30,10 @@ interface Props {
   primaryButton?: boolean;
   secondaryButton?: boolean;
   greyButton?: boolean;
-  cancelButton?:boolean;
-  blueOutlineButton?:boolean,
-  gradientButton?:boolean;
-  greyButton2?:boolean;
+  cancelButton?: boolean;
+  blueOutlineButton?: boolean,
+  gradientButton?: boolean;
+  greyButton2?: boolean;
   outline?: boolean;
   noOutline?: boolean;
   noPadding?: boolean;
@@ -42,16 +43,19 @@ interface Props {
   disabled?: boolean;
   id?: string;
   loading?: boolean;
-  textSmall?:boolean;
-  textBig?:boolean;
-  textMedium?:boolean;
-  textExtraSmall?:boolean;
-  textAvg?:boolean;
-  textInsertSlide?:boolean;
-  whiteOutline? :boolean;
+  textSmall?: boolean;
+  textBig?: boolean;
+  textMedium?: boolean;
+  textExtraSmall?: boolean;
+  textAvg?: boolean;
+  textInsertSlide?: boolean;
+  whiteOutline?: boolean;
+  path?: string;
 }
 
 const CustomButton = (props: Props) => {
+  const router = useRouter()
+
   const {
     baseclassname,
     iconPosition,
@@ -77,13 +81,14 @@ const CustomButton = (props: Props) => {
     disabled,
     id,
     loading,
-  textSmall,
-  textBig,
-  textMedium,
-  textExtraSmall,
-  textAvg,
-  textInsertSlide,
-  whiteOutline
+    textSmall,
+    textBig,
+    textMedium,
+    textExtraSmall,
+    textAvg,
+    textInsertSlide,
+    whiteOutline,
+    path
   } = props;
 
 
@@ -93,9 +98,15 @@ const CustomButton = (props: Props) => {
     }
   }
 
+  const handleGenerateClick = () => {
+    if (path)
+      router.push(path);
+  };
+
   return (
-    <div className={classnames(["ppt-button-border"],  {
-      "primary-button": primaryButton , "disabled": disabled,}, baseclassname)}>
+    <div className={classnames(["ppt-button-border"], {
+      "primary-button": primaryButton, "disabled": disabled,
+    }, baseclassname)}>
       <Button
         id={id}
         loading={!!loading}
@@ -105,16 +116,16 @@ const CustomButton = (props: Props) => {
             "primary-button": primaryButton,
             "secondary-button": secondaryButton,
             "grey-button": greyButton,
-            "cancel-button":cancelButton,
-            "gradient-button":gradientButton,
-             "grey-button-2":greyButton2,
-            "blueOutline-button":blueOutlineButton,
+            "cancel-button": cancelButton,
+            "gradient-button": gradientButton,
+            "grey-button-2": greyButton2,
+            "blueOutline-button": blueOutlineButton,
             "no-button-background": transparent,
             "outline": outline,
             "icon-only": !buttonText,
             "no-outline": noOutline,
             "no-padding": noPadding,
-            "no-margin" : noMargin,
+            "no-margin": noMargin,
             "circular": circular,
             "round": round,
             "disabled": disabled,
@@ -123,34 +134,34 @@ const CustomButton = (props: Props) => {
             "text-medium": textMedium,
             "textExtra-small": textExtraSmall,
             "text-avg": textAvg,
-            "text-insert-slide":textInsertSlide,
-            "white-outline" : whiteOutline
+            "text-insert-slide": textInsertSlide,
+            "white-outline": whiteOutline
           },
-          
+
         ])}
-        onClick={handleButtonClick}
+        onClick={path ? handleGenerateClick : handleButtonClick}
         type={type || "button"}
         disabled={disabled}
       >
         <div className="ppt-flex ppt-flex-row ppt-flex-justify-center ppt-flex-align-center width-100 height-100">
-        {/* {iconProps && iconPosition === ICON_POSITION.LEFT && (
+          {/* {iconProps && iconPosition === ICON_POSITION.LEFT && (
           <SvgIcon baseclassname={classnames([{'ppt-margin-r-2': !!buttonText}])} {...iconProps}/>
         )} */}
-        {buttonText && (
-          <span
-            className={classnames([ "ppt-text-primary-color", {"ppt-visibility-hide": loading},
-              buttonTextClass
-            ])}
-          >
-            {buttonText}
-          </span>
-        )}
-        {/* {iconProps && iconPosition === ICON_POSITION.RIGHT && (
+          {buttonText && (
+            <span
+              className={classnames(["ppt-text-primary-color", { "ppt-visibility-hide": loading },
+                buttonTextClass
+              ])}
+            >
+              {buttonText}
+            </span>
+          )}
+          {/* {iconProps && iconPosition === ICON_POSITION.RIGHT && (
           <SvgIcon baseclassname={classnames([{'ppt-margin-l-2': !!buttonText}])} {...iconProps}/>
         )} */}
         </div>
       </Button>
-      </div>
+    </div>
   );
 };
 
