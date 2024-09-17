@@ -2,7 +2,7 @@
 import { Button } from "semantic-ui-react";
 import classnames from "classnames";
 import { IconSizeProp } from "semantic-ui-react/dist/commonjs/elements/Icon/Icon";
-// import SvgIcon, { SVGType } from "components/SvgIcon";
+import SvgIcon, { SVGType } from "@/components/SvgIcon";
 import { useRouter } from "next/navigation";
 import "./CustomButton.scss";
 
@@ -13,15 +13,15 @@ export enum ICON_POSITION {
 
 interface Props {
   type?: any;
-  // iconProps?: {
-  //   svgType: SVGType;
-  //   circular?: boolean;
-  //   name: any;
-  //   size?: IconSizeProp;
-  //   baseclassname?: any;
-  //   inverted?: boolean;
-  // };
-  iconPosition?: ICON_POSITION;
+  iconProps?: {
+    svgType: "SEMANTIC" | "CUSTOM";
+    circular?: boolean;
+    name: any;
+    size?: IconSizeProp;
+    baseclassname?: any;
+    inverted?: boolean;
+  };
+  iconPosition?: "LEFT" | "RIGHT";
   handleClick?: any;
   buttonText?: string;
   buttonTextClass?: any;
@@ -59,7 +59,7 @@ const CustomButton = (props: Props) => {
   const {
     baseclassname,
     iconPosition,
-    // iconProps,
+    iconProps,
     handleClick,
     buttonText,
     buttonTextClass,
@@ -144,9 +144,9 @@ const CustomButton = (props: Props) => {
         disabled={disabled}
       >
         <div className="ppt-flex ppt-flex-row ppt-flex-justify-center ppt-flex-align-center width-100 height-100">
-          {/* {iconProps && iconPosition === ICON_POSITION.LEFT && (
+          {iconProps && iconPosition === ICON_POSITION.LEFT && (
           <SvgIcon baseclassname={classnames([{'ppt-margin-r-2': !!buttonText}])} {...iconProps}/>
-        )} */}
+        )}
           {buttonText && (
             <span
               className={classnames(["ppt-text-primary-color", { "ppt-visibility-hide": loading },
@@ -156,9 +156,9 @@ const CustomButton = (props: Props) => {
               {buttonText}
             </span>
           )}
-          {/* {iconProps && iconPosition === ICON_POSITION.RIGHT && (
+          {iconProps && iconPosition === ICON_POSITION.RIGHT && (
           <SvgIcon baseclassname={classnames([{'ppt-margin-l-2': !!buttonText}])} {...iconProps}/>
-        )} */}
+        )}
         </div>
       </Button>
     </div>
