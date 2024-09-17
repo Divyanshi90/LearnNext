@@ -5,7 +5,6 @@ import heroPic from "../../public/images/HeroImage.png";
 import unionPic from "../../public/images/Union2.png";
 import unionPic1 from "../../public/images/Union1.png";
 import CustomButton from "@/components/CustomButton";
-import { URLRoutes } from "@/URLRoutes";
 import CustomButtonClient from "@/components/CustomButtonClient";
 
 export default function Home() {
@@ -32,14 +31,13 @@ export default function Home() {
       <div
         className={classNames(
           ["width-80 ppt-flex ppt-flex-column ppt-flex-justify-center ppt-flex-align-center  ppt-section1-banner-container"],
-          // { "width-80": device === DEVICES.DESKTOP },
-          // { "width-90": device !== DEVICES.DESKTOP }
+         
         )}
       >
         <h1 className="ppt-h1 ppt-text-primary-color ppt-text-align-center ppt-section1-text1">{"Create a"}<span className="ppt-text-gradient-color-1"> {"Stunning Presentation"}</span>{"in Minutes"}</h1>
         <h1 className="ppt-h1 ppt-text-primary-color ppt-section1-text2">{"Powered by AI"}</h1>
         <div className="ppt-text-grey-color ppt-margin-b-10 ppt-text-align-center ppt-section1-text3">{"The world's most advanced AI, trained on a diverse array of content and designs, crafts the perfect presentation for you."}</div>
-      <CustomButtonClient/>
+      <CustomButtonClient buttonText={"Create a Presentation Now"}/>
         <Image src={heroPic ||"/images/HeroImage.png"}  className={classNames(["width-100 height-100"])} alt="HeroImage" />
      
       </div>
@@ -58,15 +56,7 @@ export default function Home() {
         <div className="ppt-flex ppt-flex-column ppt-flex-justify-center ppt-position-relative ppt-section2-left-container">
           <h2 className="ppt-h2 ppt-section2-text1 ppt-text-gradient-color-1">{"Game Changing"}</h2>
           <h2 className="ppt-h2 ppt-section2-text2">{"Approach to Storytelling in Powerpoint"}</h2>
-          <CustomButton
-            type="submit"
-            buttonText={"Try Now"}
-            gradientButton
-            circular
-            textBig
-            // handleClick={handleClick}
-            baseclassname={"ppt-margin-t-4"}
-          />
+            <CustomButtonClient buttonText={"Try Now"}/>
         </div>
         <div className="ppt-flex ppt-flex-column ppt-padding-l-3 ppt-section2-right-container">
           <div className="ppt-section2-text3 ppt-text-align-center">{"Why we are different"}</div>

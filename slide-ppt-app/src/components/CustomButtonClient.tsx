@@ -2,7 +2,13 @@
 import { useRouter } from 'next/navigation';
 import CustomButton from "@/components/CustomButton";
 
-const CustomButtonClient = () => {
+interface IProps {
+  buttonText: string;
+}
+
+
+
+const CustomButtonClient = ({buttonText}: IProps) => {
   const router = useRouter();
 
   const handleGenerateClick = () => {
@@ -11,7 +17,7 @@ const CustomButtonClient = () => {
 
   return (
     <CustomButton
-      buttonText={"Create a Presentation Now"}
+      buttonText={buttonText}
       gradientButton
       circular
       handleClick={handleGenerateClick}
