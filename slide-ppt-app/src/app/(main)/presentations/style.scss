@@ -1,0 +1,102 @@
+@import "../../../styles/core/core-variables";
+
+.ppt-presentation {
+  &-wrapper {
+    overflow-y: auto;
+    
+  }
+
+  &-box {
+    border: 1px solid transparent;
+  }
+
+  &-box:hover {
+    background: linear-gradient(90deg, #DF1FFE 2.1%, #1298F9 100.11%);
+  }
+
+  &-container {
+    width: 19%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      width: 48%;
+    }
+
+    @media screen and (min-width: 993px) and (max-width: 1439px) {
+      width: 32%;
+    }
+
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+      width: 25%;
+    }
+  }
+
+  &-placeholder {
+    height: 230px;
+  }
+
+  &-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.68rem;
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    color: $primary-color;
+  }
+
+  &-info {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: $grey-shade-2;
+  }
+}
+
+.ppt-presentation-box-inner {
+  min-height: 200px;
+  @media screen and (min-width: 993px) and (max-width: 1439px) {
+    min-height: 150px;
+  }
+}
+.ppt-presentation-wrapper::-webkit-scrollbar {
+
+  width: 6px;
+  background-color: #2FACFF;
+  border-radius: 40px;
+}
+
+.ppt-presentation-wrapper::-webkit-scrollbar-thumb {
+  background-color: #2FACFF;
+}
+
+.ppt-presentation-wrapper::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 40px !important;
+
+}
+
+@media screen and (max-width: 767px) {
+  .ppt-presentation {
+    &-heading {
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1rem;
+    }
+
+    &-title {
+      font-size: 1.25rem;
+      line-height: 1.87rem;
+    }
+
+    &-info {
+      font-size: 0.87rem;
+      line-height: 1.31rem;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 function TopicsContainer() {
   return (
-    <div>TopicsContainer</div>
+    <div className="ppt-text-primary-color">TopicsContainer</div>
   )
 }
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import "./style.scss";
 
 function PresentationContainer() {
   return (
-    <div>PresentationContainer</div>
+    <div className="ppt-text-primary-color">PresentationContainer</div>
   )
 }
 

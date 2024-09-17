@@ -2,7 +2,7 @@ import React from 'react'
 
 function SlidesContainer() {
   return (
-    <div>SlidesContainer</div>
+    <div className="ppt-text-primary-color">SlidesContainer</div>
   )
 }
 
