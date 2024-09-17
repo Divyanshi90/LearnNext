@@ -1,0 +1,411 @@
+@import "../../styles/core/core-variables";
+
+.ppt-button-border {
+  border: 1.5px solid transparent;
+  border-radius: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &.primary-button {
+    background: linear-gradient(90deg, #DF1FFE -8.16%, #1298F9 103.68%);
+    &.disabled {
+      opacity: 0.45;
+    }
+  }
+}
+
+
+.ppt-customButton {
+  &.ui.button {
+    min-width: 3.5rem;
+    margin: 0;
+    font-family: $primary-font;
+    padding: 0.53rem 1.312rem;
+    font-size: 0.93rem;
+    font-weight: 500;
+    line-height: 1.26rem; //1.57
+    width: inherit;
+    border-radius: inherit;
+
+    &.round {
+      border-radius: 40px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.icon-only {
+      min-width: 0px;
+      padding: 0.25rem;
+    }
+
+    &.no-padding {
+      padding: 0;
+      min-width: 0;
+    }
+
+    &.no-margin {
+      margin: 0;
+    }
+
+    &.disabled {
+      cursor: not-allowed !important;
+    }
+
+    &.circular {
+      border-radius: 40px;
+    }
+
+    &.text-small {
+      font-size: 0.87rem;
+      line-height: 1.18rem;
+      padding: 0.68rem 1.31rem;
+    }
+    &.textExtra-small {
+      font-size: 0.625rem;
+      line-height: 0.844rem;
+      padding: 0.25rem 0.35rem;
+    }
+
+    &.text-big {
+      font-size: 1.6rem;
+      line-height: 1.42rem;
+      padding: 1.25rem 1.5rem;
+    }
+    &.text-avg {
+      font-size: 1.375rem;
+      line-height: 1.856rem;
+      // padding: 1.375rem 2.5rem;
+      padding : 14px 20px;
+    }
+
+    &.text-medium {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      padding: 0.93rem 1.5rem;
+    }
+
+    &.text-insert-slide {
+      font-size: 1.438rem;
+      line-height: 1.94rem;
+      // padding: 1.063rem 2.5rem;
+       padding: 0.75rem 1.75rem;
+    }
+
+
+    &.primary-button {
+      background-color: $black-shade-3;
+
+      &.outline {
+        background-color: transparent;
+        color: $secondary-color;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+      &:disabled {
+        background: black !important;
+        opacity: 0.9 !important;
+      }
+    }
+
+
+
+
+    &.blueOutline-button {
+      background-color: $black-shade-3;
+      color: $primary-color;
+      border: 1.5px solid $blue-shade-2;
+      box-shadow: 0px 0px 10px 0px #7744FFB2;
+
+
+      &.outline {
+        background-color: transparent;
+        color: $blue-shade-2;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+    }
+
+    &.secondary-button {
+      background-color: $blue-shade-2;
+      color: $primary-color;
+      border: 1.5px solid $blue-shade-2;
+      box-shadow: none;
+
+      &.outline {
+        background-color: transparent;
+        color: $blue-shade-2;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+    }
+
+    &.gradient-button {
+      background: $gradient-shade-2;
+      color: $primary-color;
+      border: 1.5px solid $gradient-shade-1;
+      box-shadow: 0px 0px 10px 0px #7744FFB2;
+      // transition:0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
+     
+ 
+      &.outline {
+        background-color: transparent;
+        color: $gradient-shade-1;
+        box-shadow: none;
+      }
+      &.white-outline {
+        background: $gradient-shade-2;
+        color: $gradient-shade-1;
+        box-shadow: none;
+        border: 1px solid $primary-color;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+      &:disabled {
+        background: $gradient-shade-2 !important;
+
+      }
+
+      &:hover {
+        background: linear-gradient(268deg, #cc38e3 2.1%, #1298F9 100.11%);
+        color: $primary-color;
+        border: 1.5px solid $gradient-shade-1;
+        box-shadow: 0px 0px 10px 0px #7744FFB2;
+      
+      }
+
+    }
+
+    &.cancel-button {
+      background-color: $black-shade-8;
+      color: $primary-color;
+
+      &.outline {
+        background-color: transparent;
+        color: $secondary-color;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+
+    &.grey-button {
+      background-color: $black-shade-3;
+      color: $primary-color;
+      // font-size: 15px;
+      // line-height: 20.25px;
+
+      &.no-padding {
+        padding: 0;
+        min-width: 0;
+      }
+
+      &.outline {
+        background-color: transparent;
+        // color: $secondary-color;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+      &.no-button-background {
+        background-color: transparent;
+        color: $primary-color;
+
+        &:hover {
+          text-decoration: none;
+          color: $primary-color;
+        }
+      }
+    }
+
+    &.grey-button-2 {
+      background-color: $grey-shade-12;
+      color: $primary-color;
+      
+
+      &.no-padding {
+        padding: 0;
+        min-width: 0;
+      }
+
+      &.outline {
+        background-color: transparent;
+        // color: $secondary-color;
+        box-shadow: none;
+      }
+
+      &.no-outline {
+        border: none;
+        box-shadow: none;
+      }
+
+      &.no-button-background {
+        background-color: transparent;
+        color: $primary-color;
+
+        &:hover {
+          text-decoration: none;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+.ui.popup.button-popover {
+  padding: $padding-1;
+  background: $black-shade-4;
+  border: none;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+}
+
+@media screen and (max-width: 767px) {
+  .ppt-customButton {
+    &.ui.button {
+      padding: 7px 12px;
+      font-size: 0.75rem;
+      line-height: 0.92rem;
+
+      &.text-big {
+        line-height: 1.35rem;
+        font-size: 1rem;
+        padding: 16px 32px;
+      }
+      &.text-insert-slide {
+        font-size: 1rem;
+        line-height: 0.84rem;
+        padding: 0.75rem 1rem;
+      }
+    }
+  }
+}
+
+.ui.button {
+  &.width-20p {
+    min-width: 20px !important;
+  }
+
+  &.ppt-padding {
+    &-1 {
+      padding: $padding-1;
+    }
+
+    &-2 {
+      padding: $padding-2;
+    }
+
+    &-3 {
+      padding: $padding-3;
+    }
+
+    &-4 {
+      padding: $padding-4;
+    }
+
+    &-l-1 {
+      padding-left: $padding-1;
+    }
+
+    &-l-2 {
+      padding-left: $padding-2;
+    }
+
+    &-l-3 {
+      padding-left: $padding-3;
+    }
+
+    &-l-4 {
+      padding-left: $padding-4;
+    }
+
+    &-r-1 {
+      padding-right: $padding-1;
+    }
+
+    &-r-2 {
+      padding-right: $padding-2;
+    }
+
+    &-r-3 {
+      padding-right: $padding-3;
+    }
+
+    &-r-4 {
+      padding-right: $padding-4;
+    }
+
+  }
+
+  &.ppt-margin {
+    &-l-1 {
+      margin-left: $margin-1;
+    }
+
+    &-l-2 {
+      margin-left: $margin-2;
+    }
+
+    &-l-3 {
+      margin-left: $margin-3;
+    }
+
+    &-l-4 {
+      margin-left: $margin-4;
+    }
+
+    &-l-8 {
+      margin-left: $margin-8;
+    }
+
+    &-r-1 {
+      margin-right: $margin-1;
+    }
+
+    &-r-2 {
+      margin-right: $margin-2;
+    }
+
+    &-r-3 {
+      margin-right: $margin-3;
+    }
+
+    &-r-4 {
+      margin-right: $margin-4;
+    }
+
+    &-r-5 {
+      margin-right: $margin-5;
+    }
+  }
+}

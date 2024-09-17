@@ -1,0 +1,480 @@
+
+@import "../styles/core/core-variable-env";
+@import "../styles/core/core-variables";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+.ppt-section1 {
+   margin-bottom: 3rem;
+
+   &-banner-container {
+      z-index: 1;
+      background-image: url(#{$APP_ASSETS_URL}/images/Rectangle.png);
+      border-radius: 50px;
+      background-size: cover;
+   }
+
+   &-bg-ellipses {
+      bottom: 0;
+      top: 0;
+   }
+
+   &-union2-image {
+      right: 0;
+      bottom: 0;
+      opacity: 0.7;
+   }
+
+   &-hiddenText {
+      display: none;
+   }
+
+   &-text1 {
+      font-size: 4.25rem;
+      line-height: 6.2rem;
+      font-weight: 700;
+      padding-top: 5rem;
+       span {
+         font-weight: 700;
+       }
+   }
+   &-text2 {
+      font-size: 4.25rem;
+      line-height: 6.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      
+   }
+   &-text4 {
+      font-size: 4.25rem;
+      line-height: 6.2rem;
+      font-weight: 700;
+   }
+  
+  
+   &-text3 {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      font-weight: 400;
+   }
+
+   &-gradientCircle {
+      z-index: 100;
+      right: 5%;
+      top: 45%
+   }
+
+   &-triangle {
+      z-index: 100;
+      top: 38%;
+      left: -5%;
+   }
+}
+
+.ppt-section2 {
+
+   &-union1-image {
+      left: 0;
+      top: 6.5rem;
+      opacity: 0.7;
+   }
+
+   &-text1 {
+      font-size: 3.1rem;
+      line-height: 4.7rem;
+      font-weight: 700;
+
+   }
+
+   &-text2 {
+      font-size: 2.56rem;
+      line-height: 3.84rem;
+      font-weight: 500;
+      
+   }
+
+   &-text3 {
+      font-size: 2.125rem;
+      line-height: 3.4rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+   }
+
+   &-left-container {
+      width: 35%;
+   }
+
+   &-right-container {
+      width: 65%;
+   }
+
+   &-card {
+      width: 49%;
+      margin-bottom: 1.15rem;
+      border: 1px solid transparent;
+      border-radius: 20px;
+
+      &-inner {
+         background: #121533;
+         border-radius: 20px;
+         height: 100%;
+      }
+
+
+      &-circle {
+         border: 2px solid white;
+         border-radius: 40px;
+         width: 45px;
+         height: 45px;
+      }
+
+      &-text1 {
+         font-size: 1.438rem;
+         line-height: 2.25rem;
+         font-weight: 500;
+         color: $primary-color;
+        
+      }
+
+      &-text2 {
+         font-size: 1rem;
+         line-height: 1.5rem;
+         color: $blue-shade-3;
+         margin-bottom: 0.625rem;
+         font-weight: 400;
+      }
+   }
+}
+.ppt-section2-card:hover {
+   background: linear-gradient(90deg, #DF1FFE 2.1%, #1298F9 100.11%);
+}
+
+
+.ppt-section3 {
+   &-desktop {
+      height: 800px;
+      background-image: url(#{$APP_ASSETS_URL}/images/Section2.png);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 6.25rem;
+   }
+
+   &-mobile {
+      width: 100%;
+      min-height: 535px;
+      background-image: url(#{$APP_ASSETS_URL}/images/sect3_mobile.png);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   &-text {
+      width: 50%;
+      min-width: 525px;
+      max-width: 700px;
+   }
+
+   &-text1 {
+      font-size: 2.625rem;
+      font-weight: 700;
+      line-height: 3.15rem;
+      color: $primary-color;
+      margin-bottom: 2rem;
+     
+   }
+
+   &-text2 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 2rem;
+      text-align: left;
+      color: $grey-shade;
+      margin-bottom: 2rem;
+
+   }
+   &-text3 {
+      font-size: 3.18rem;
+      font-weight: 700;
+      line-height: 3.8rem;
+   }
+
+}
+
+.ppt-section4 {
+   margin-top: 4rem;
+   padding-bottom: 9rem;
+
+   &-heading {
+      font-size: 2.625rem;
+      font-weight: 700;
+      line-height: 3.15rem;
+      margin-bottom: 3rem;
+   }
+
+   &-FAQ {
+      margin-top: 1.5rem;
+      border-image-slice: 1;
+      border-width: 1px;
+      border-style: solid;
+      border-image-source: linear-gradient(90.82deg, #FF1CF7 24.27%, #00F0FF 71.14%);
+
+   }
+}
+
+
+@media screen and (max-width: 767px) {
+
+   .ppt-section1 {
+      margin-bottom: 5rem;
+
+      &-banner-container {
+         z-index: 1;
+         background: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0) 45.67%, #0099FF 75.34%, #1984CC 100%);
+         border-radius: 20px;
+      }
+
+      &-bg-ellipses {
+         top: 1.5rem;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+
+      &-text1 {
+         font-size: 1.3rem;
+         line-height: 1.9rem;
+         font-weight: 700;
+         padding-top: 3rem;
+         padding-bottom: 0.5rem;
+      }
+
+
+      &-text2 {
+         font-size: 1.3rem;
+         line-height: 1.9rem;
+         font-weight: 700;
+      }
+      &-text4{
+         font-size: 1.3rem;
+         line-height: 1.9rem;
+         font-weight: 700;
+      }
+
+      &-text3 {
+         font-size: 0.8rem;
+         line-height: 1.4rem;
+         font-weight: 500;
+      }
+
+      &-gradientCircle {
+         display: none;
+      }
+
+      &-triangle {
+         display: none;
+      }
+   }
+
+
+   .ppt-section2 {
+      &-text1 {
+         width: 90%;
+         font-size: 1.375rem;
+         font-weight: 500;
+         line-height: 2.063rem;
+         text-align: center;
+         margin-bottom: 0.25rem;
+      }
+
+      &-text2 {
+         font-size: 1.375rem;
+         font-weight: 500;
+         line-height: 2.063rem;
+         text-align: center;
+      }
+
+      &-text3 {
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.6rem;
+         text-align: center;
+         margin-bottom: 1rem;
+      }
+
+      &-container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      &-card {
+         width: 90%;
+         margin-bottom: 2rem;
+
+         &-text1 {
+            font-size: 1.313rem;
+            line-height: 1.575rem;
+            margin-bottom: 1rem;
+         }
+
+         &-text2 {
+            font-size: 0.875rem;
+            line-height: 1.313rem;
+         }
+      }
+   }
+
+   .ppt-section3 {
+      &-text {
+         width: 50%;
+      }
+
+      &-text1 {
+         font-size: 1.375rem;
+         font-weight: 500;
+         line-height: 2.063rem;
+         text-align: center;
+         margin-bottom: 1.5rem;
+      }
+
+      &-text2 {
+         font-size: 0.875rem;
+         font-weight: 400;
+         line-height: 1.375rem;
+         text-align: center;
+         margin-bottom: 2rem;
+         width: 90%;
+      }
+
+      &-line {
+         top: -2rem;
+      }
+   }
+
+   .ppt-section4 {
+       margin-top: 0;
+      padding-bottom: 6rem;
+      &-heading {
+         font-size: 1.4rem;
+         line-height: 1.7rem;
+         font-weight: 700;
+         margin-bottom: 2.5rem;
+      }
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+   .ppt-section1 {
+      &-gradientCircle {
+        display: none;
+      }
+      &-triangle {
+        display: none;
+      }
+      &-text1 {
+         font-size: 2.5rem;
+         line-height: 3.65rem;
+      }
+      &-text2 {
+         font-size: 2.5rem;
+         line-height: 3.65rem;
+      }
+      &-text4 {
+         font-size: 2.5rem;
+         line-height: 3.65rem;
+      }
+      &-text3 {
+         font-size: 1rem;
+      }
+   }
+   .ppt-section2 {
+      &-container {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         padding: 1rem;
+      }
+
+      &-card {
+         width: 49%;
+      }
+   }
+
+   .ppt-section3-mobile {
+      // width: 100%;
+      min-height: 700px;
+      // height: 700px;
+      // background-image: url(#{$APP_ASSETS_URL}/images/sect3_mobile.png);
+      // background-position: top right;
+      // background-repeat: no-repeat;
+      // background-size: contain;
+   }
+
+   .ppt-section3-desktop {
+      height: 900px;
+      background-image: url(#{$APP_ASSETS_URL}/images/sect3_tab.png);
+      // background-position: top 130px right;
+     background-position: top 41px right -4rem;
+   }
+}
+
+@media screen and (min-width: 1920px) {
+   .ppt-section2 {
+      &-left-container {
+         width: 25%;
+      }
+
+      &-right-container {
+         width: 75%;
+      }
+
+      &-card {
+         width: 32%;
+      }
+   }
+}

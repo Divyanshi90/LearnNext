@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./globals.scss";
 import "../styles/index.scss";
-
+// import 'semantic-ui-css/semantic.min.css';
 
 
 export const metadata: Metadata = {
