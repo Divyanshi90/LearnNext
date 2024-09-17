@@ -1,7 +1,8 @@
-import { Icon } from "semantic-ui-react";
-import classNames from "classnames";
-import { CustomIconRef } from "./IconRef";
+"use client"
 
+import { Icon } from "semantic-ui-react";
+import { CustomIconRef } from "./IconRef";
+import classNames from "classnames";
 import "./SvgIcon.scss";
 
 export enum SVGType {
@@ -10,7 +11,7 @@ export enum SVGType {
 }
 
 export interface Props {
-  svgType: SVGType;
+  svgType: string;
   circular?: boolean;
   name: any;
   size?: any;
@@ -18,12 +19,11 @@ export interface Props {
   inverted?: boolean;
 }
 
-
-
 const SvgIcon = (props: Props) => {
   const { circular, name, size, baseclassname, inverted } = props;
   const CustomIcon = CustomIconRef[name];
-  return props.svgType === SVGType.SEMANTIC ? (
+
+  return props.svgType === "SEMANTIC" ? (
     <Icon
       circular={circular}
       name={name}

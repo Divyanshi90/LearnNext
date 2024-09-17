@@ -2,17 +2,16 @@
 import { useRouter } from 'next/navigation';
 import CustomButton from "@/components/CustomButton";
 
-interface IProps {
+interface Props {
   buttonText: string;
+  path: string;
 }
 
-
-
-const CustomButtonClient = ({buttonText}: IProps) => {
+function NavigateButton({ buttonText, path }: Props) {
   const router = useRouter();
 
   const handleGenerateClick = () => {
-    router.push('/generate'); 
+    router.push(path);
   };
 
   return (
@@ -26,4 +25,4 @@ const CustomButtonClient = ({buttonText}: IProps) => {
   );
 };
 
-export default CustomButtonClient;
+export default NavigateButton;
