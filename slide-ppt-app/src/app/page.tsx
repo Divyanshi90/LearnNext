@@ -6,7 +6,6 @@ import unionPic from "../../public/images/Union2.png";
 import unionPic1 from "../../public/images/Union1.png";
 import CustomButton from "@/components/CustomButton";
 import { URLRoutes } from "@/URLRoutes";
-import { useRouter } from "next/router";
 import CustomButtonClient from "@/components/CustomButtonClient";
 
 export default function Home() {
