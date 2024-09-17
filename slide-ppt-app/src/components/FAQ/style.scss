@@ -1,0 +1,30 @@
+.ppt-faq-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2.3rem;
+}
+
+.ppt-faq-ans {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.2rem;
+  margin-top: 0.75rem;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .ppt-faq-title {
+    font-size: 1rem;
+    line-height: 1.35rem;
+    padding-right: 1rem;
+  }
+  
+  .ppt-faq-ans {
+    font-size: 0.75rem;
+    line-height: 1.01rem;
+    margin-top: 1rem;
+  }
+
+
+}
