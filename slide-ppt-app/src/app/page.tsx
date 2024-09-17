@@ -5,66 +5,12 @@ import heroPic from "../../public/images/HeroImage.png";
 import unionPic from "../../public/images/Union2.png";
 import unionPic1 from "../../public/images/Union1.png";
 import CustomButton from "@/components/CustomButton";
-// import { useRouter } from "next/navigation";
 import { URLRoutes } from "@/URLRoutes";
+import { useRouter } from "next/router";
+import CustomButtonClient from "@/components/CustomButtonClient";
 
 export default function Home() {
-  // const router = useRouter();
 
-  console.log("Page Rendered")
-  // const handleGenerateClick = () => {
-  //   router.push(URLRoutes.clients.generate);
-  //  };
-  // const FAQDetails = () => {
-
-  //   return [
-  //       {
-       
-  //         title: translations.HOME_FAQ_QUES_1,
-  //         ans: translations.HOME_FAQ_ANS_1
-  //       },
-  //       {
-        
-  //         title:translations.HOME_FAQ_QUES_2,
-  //         ans: translations.HOME_FAQ_ANS_2
-  //       },
-  //       {
-        
-  //         title: translations.HOME_FAQ_QUES_3,
-  //         ans: translations.HOME_FAQ_ANS_3
-  //       },
-  //       {
-  //         title: translations.HOME_FAQ_QUES_4,
-  //         ans: translations.HOME_FAQ_ANS_4
-  //       },
-  //       {
-  //         title: translations.HOME_FAQ_QUES_5,
-  //         ans: translations.HOME_FAQ_ANS_5
-  //       },
-  //       {
-  //         title: translations.HOME_FAQ_QUES_6,
-  //         ans: translations.HOME_FAQ_ANS_6
-  //       },
-  //       {
-  //         title: translations.HOME_FAQ_QUES_7,
-  //         ans: translations.HOME_FAQ_ANS_7
-  //       },
-  //       {
-  //         title: translations.HOME_FAQ_QUES_8,
-  //         ans: translations.HOME_FAQ_ANS_8
-  //       },
-  //       {
-  //         title: translations.HOME_FAQ_QUES_9,
-  //         ans: translations.HOME_FAQ_ANS_9
-  //       },
-  //       {
-  //         title:translations.HOME_FAQ_QUES_10,
-  //         ans: translations.HOME_FAQ_ANS_10
-  //       },
-
-
-  //     ];
-  //   };
   return (
     <Fragment>
     <div className="ppt-flex ppt-flex-column ppt-flex-justify-center ppt-flex-align-center width-100 ppt-position-relative ppt-section1">
@@ -94,14 +40,7 @@ export default function Home() {
         <h1 className="ppt-h1 ppt-text-primary-color ppt-text-align-center ppt-section1-text1">{"Create a"}<span className="ppt-text-gradient-color-1"> {"Stunning Presentation"}</span>{"in Minutes"}</h1>
         <h1 className="ppt-h1 ppt-text-primary-color ppt-section1-text2">{"Powered by AI"}</h1>
         <div className="ppt-text-grey-color ppt-margin-b-10 ppt-text-align-center ppt-section1-text3">{"The world's most advanced AI, trained on a diverse array of content and designs, crafts the perfect presentation for you."}</div>
-        <CustomButton
-            // type="submit"
-            buttonText={"Create a Presentation Now"}
-            gradientButton
-            circular
-            // handleClick={handleGenerateClick}
-            textBig
-          />
+      <CustomButtonClient/>
         <Image src={heroPic ||"/images/HeroImage.png"}  className={classNames(["width-100 height-100"])} alt="HeroImage" />
      
       </div>
